@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import Switcher from './components/Switcher';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+
 import './App.css';
 
-function App() {
+const theme = {
+  colors : {
+    white: 'white'
+  },
+  fonts: {
+    primary: 'Quicksand'
+  }
+}
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: georgia,serif;
+  }
+
+  input {
+    font-family: georgia,serif;
+  }
+
+  textarea {
+    font-family: georgia,serif;
+  }
+`;
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+          {/* <Header /> */}
+          <Switcher />
+      </ThemeProvider>
     </div>
   );
 }
