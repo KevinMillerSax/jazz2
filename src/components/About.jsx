@@ -9,7 +9,7 @@ const IntroContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
-  width: 50%;
+  width: 45%;
 `;
 
 const ImageContainer = styled.div`
