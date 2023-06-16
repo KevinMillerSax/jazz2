@@ -12,8 +12,6 @@ const Nav = styled.nav`
   position: absolute;
   z-index: 2;
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
   pointer-events: auto;
   background: transparent;
   text-decoration: none;
