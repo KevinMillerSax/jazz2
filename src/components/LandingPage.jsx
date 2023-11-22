@@ -7,9 +7,9 @@ const LandingPage = () => {
   return(
     <div className="scroll-area">
       <Banner />
-      <About />
       <Music />
-      <ContactForm />
+      <About />
+      {/* <ContactForm /> */}
     </div>
   );
 };

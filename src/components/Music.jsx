@@ -18,6 +18,14 @@ const Header = styled.h1`
   font-family: ${props => props.theme.fonts.primary};
 `;
 
+const HeaderSmall = styled.h2`
+  font-family: ${props => props.theme.fonts.primary};
+`
+
+const IconWrapper = styled.div`
+  display: flex;
+`;
+
 
 const Music = () => {
   return(
@@ -30,6 +38,13 @@ const Music = () => {
         <ReactPlayer url='https://soundcloud.com/kmilsax/felicidade?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' height='12vh' width={'75vw'} />
         <ReactPlayer url='https://soundcloud.com/kmilsax/blue-minor?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' height='12vh' width={'75vw'} />
       </PlayerContainer>
+      <HeaderSmall>Listen On:</HeaderSmall>
+      <IconWrapper>
+        <i class="fa-brands fa-spotify fa-lg"></i>
+        <i class="fab fa-itunes fa-lg"></i>
+        <i class="fab fa-amazon fa-lg"></i>
+      </IconWrapper>
+     
     </MusicContainer>
   );
 };

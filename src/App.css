@@ -17,3 +17,7 @@ a {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+
+.fa-lg {
+  font-size: 4.25em;
+}

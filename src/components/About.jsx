@@ -9,13 +9,23 @@ const IntroContainer = styled.div`
 `;
 
 const TextContainer = styled.div`
-  width: 45%;
+  width: 48%;
+  margin: 0 auto;
+  height: 40vh;
+  font-family: ${props => props.theme.fonts.primary};
+  font-size: 32px;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
@@ -26,7 +36,6 @@ const Image = styled.img`
   box-shadow: grey 0px 7px 29px 0px;
 `
 
-
 const About = () => {
   return(
     <IntroContainer className="scroll-section" id="about">
@@ -34,7 +43,9 @@ const About = () => {
         <Image src={SaxPhoto} />
       </ImageContainer>
       <TextContainer>
-        {INTRO}
+        <p>
+          {INTRO}
+        </p>
       </TextContainer>
     </IntroContainer>
   );
