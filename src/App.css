@@ -20,4 +20,8 @@ a {
 
 .fa-lg {
   font-size: 4.25em;
+  cursor: pointer;
+}
+.fa-lg:hover {
+  font-size: 4.50em;
 }

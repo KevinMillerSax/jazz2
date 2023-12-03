@@ -5,6 +5,9 @@ const MusicContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  // @media only screen and (max-width: 600px) {
+  //   width: 95%;
+  // }
 `;
 
 const PlayerContainer = styled.div`
@@ -20,10 +23,21 @@ const Header = styled.h1`
 
 const HeaderSmall = styled.h2`
   font-family: ${props => props.theme.fonts.primary};
+  padding-bottom: 20px;
 `
 
 const IconWrapper = styled.div`
   display: flex;
+  width: 33vw;
+  justify-content: space-evenly;
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
+  }
+}
+`;
+
+const Anchor = styled.a`
+  color: black;
 `;
 
 
@@ -40,9 +54,18 @@ const Music = () => {
       </PlayerContainer>
       <HeaderSmall>Listen On:</HeaderSmall>
       <IconWrapper>
-        <i class="fa-brands fa-spotify fa-lg"></i>
-        <i class="fab fa-itunes fa-lg"></i>
-        <i class="fab fa-amazon fa-lg"></i>
+        <Anchor href='https://open.spotify.com/artist/0CSd5XsQDrAlMDCwKITVrb' target='_blank'  rel='noreferrer'>
+          <i class="fa-brands fa-spotify fa-lg"></i>
+        </Anchor>
+        <Anchor href='https://music.apple.com/gb/artist/kevin-perry/1717202839' target='_blank' rel='noreferrer'>
+          <i class="fab fa-itunes fa-lg"></i>
+        </Anchor>
+        <Anchor href='https://music.amazon.com/albums/B0CNL1XG2L' target='_blank' rel='noreferrer'>
+          <i class="fab fa-amazon fa-lg"></i>
+        </Anchor>
+        <Anchor href='https://www.youtube.com/watch?v=uRCCK3MkzRQ&list=OLAK5uy_mG-KspZLcKyOy0tsFXnupvqnTJJNia_wY' target='_blank' rel='noreferrer'>
+          <i class="fab fa-youtube fa-lg"></i>
+        </Anchor>
       </IconWrapper>
      
     </MusicContainer>

@@ -15,7 +15,8 @@ const TextContainer = styled.div`
   font-family: ${props => props.theme.fonts.primary};
   font-size: 32px;
   @media only screen and (max-width: 600px) {
-    width: 90%;
+    width: 95%;
+    font-size: 28px;
   }
 `;
 
@@ -34,7 +35,8 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 10px;
   box-shadow: grey 0px 7px 29px 0px;
-`
+`;
+
 
 const About = () => {
   return(
@@ -46,6 +48,10 @@ const About = () => {
         <p>
           {INTRO}
         </p>
+        <p>
+          Get in touch at: 
+        </p>
+        <p><b>kevinperryjazz@gmail.com</b></p>
       </TextContainer>
     </IntroContainer>
   );
