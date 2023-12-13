@@ -1,1 +1,0 @@
-export const INTRO = "Kevin Miller is a skilled jazz saxophonist based in Ventra County, California. With a soulful and technically impressive style, he is a frequent performer at local venues and events. Miller's passion for the music is contagious, and he is a respected performer who has played at some the country's top jazz clubs and music festivals."
